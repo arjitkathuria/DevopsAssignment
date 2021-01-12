@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="69" started-at="2021-01-12T06:24:49Z" finished-at="2021-01-12T06:24:49Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="69" started-at="2021-01-12T06:24:49Z" finished-at="2021-01-12T06:24:49Z">
+      <class name="com.nagp.devops.Devops">
+        <test-method status="PASS" signature="helloAssignment()[pri:0, instance:com.nagp.devops.Devops@548ad73b]" name="helloAssignment" duration-ms="21" started-at="2021-01-12T06:24:49Z" finished-at="2021-01-12T06:24:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helloAssignment -->
+      </class> <!-- com.nagp.devops.Devops -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

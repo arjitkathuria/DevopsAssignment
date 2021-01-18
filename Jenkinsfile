@@ -1,11 +1,28 @@
-node("master"){
-    stage("checkout"){
-        sh "echo checkout"
-    }
+pipeline{
+    agent any
+    stages{
+            stage("checkout"){
+                steps{
+                    sh "echo checkout"
+                }
+         }
     stage("build"){
-        sh "echo build"
+        steps{
+            sh "echo build"
+        }
     }
     stage("Unit test"){
-       sh "echo unit test" 
+        steps{
+            sh "echo unit test" 
+        }
+     }
     }
+    
+    post{
+        success{
+            sh "echo build is success"
+        }
+        
+    }
+
 }

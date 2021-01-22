@@ -23,20 +23,20 @@ pipeline{
             steps{
                 sh "export MAVEN_HOME=/Users/arjitkathuria/Desktop/apache-maven-3.6.3"
                  sh "export PATH=$PATH:$MAVEN_HOME/bin"
-                rtMavenDeployer{
+                rtMavenDeployer(
                     id: 'deployer',
                      serverId: '123456789@artifactory',
                      releaseRepo: 'arjitkathuria.napqa',
                      snapshotRepo: 'arjitkathuria.nagpqa'
-                }
-                rtMavenRun{
+                )
+                rtMavenRun(
                     pom: 'pom.xml',
                      goals: 'clean install',
                     deployerId: 'deployer'
-                }
-                rtPublisherBuildInfo{
+                )
+                rtPublisherBuildInfo(
                     serverId:  '123456789@artifactory',
-                }
+                )
             }
         }
     }

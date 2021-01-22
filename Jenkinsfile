@@ -26,12 +26,12 @@ pipeline{
                 rtMavenDeployer{
                     id: 'deployer',
                      serverId: '123456789@artifactory',
-                     releaseRepo: 'arjitkathuria.napqa'
+                     releaseRepo: 'arjitkathuria.napqa',
                      snapshotRepo: 'arjitkathuria.nagpqa'
                 }
                 rtMavenRun{
                     pom: 'pom.xml',
-                     goals: 'clean install'
+                     goals: 'clean install',
                     deployerId: 'deployer'
                 }
                 rtPublisherBuildInfo{
